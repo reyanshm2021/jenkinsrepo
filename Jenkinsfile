@@ -23,7 +23,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploy step'
-                sh "sudo docker run -d  -p 80:80 app"
+               // sh "sudo docker run -d  -p 80:80 app"
+            }
+        }
+        stage('New stage') {
+            steps {
+                echo 'hello this is new commited code'
+               // sh "sudo docker run -d  -p 80:80 app"
             }
         }
     }
